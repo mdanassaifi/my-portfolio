@@ -1,15 +1,21 @@
+@import url(https://fonts.google.com/specimen/Be+Vietnam+Pro);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: " be vietnam pro" , sans-serif;
     scroll-behavior: smooth;
 
+}
+:root{
+    --bgOrange: #e84949;
 }
 
 
 #wrapper{
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
     overflow-x: hidden;
 
 }
@@ -25,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 1rem; 
 
 
 }
@@ -67,6 +73,6 @@ a{
 }
 
 .nav-items div:hover{
-    transition: all 1s;
+    /* transition: all 1s; */
     font-weight: bold;
     }
