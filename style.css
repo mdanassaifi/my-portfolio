@@ -672,182 +672,99 @@ a{
 }
 
 
-
-/*---------------------------------------- Base Styles (Desktop) ------------------------------------------------*/
-@media (min-width: 1200px) {
-    /* Styles for large screens (desktop view) */
-    .wrapper {
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    .container {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-    /* Adjust sizes, font sizes, margins for a larger view */
-    .navbar {
-        padding-top: 1rem;
-    }
-
-    .hero-section-heading {
-        font-size: 35px;
-    }
-    
-    .hero-section-sub-heading {
-        font-size: 45px;
-    }
-
-    .project-card {
-        width: 90%;
-        height: 550px;
-    }
-
-    .project-content {
-        scale: 1;
-    }
-
-    /* Skills section */
-    .skill-container-left,
-    .skill-container-right {
-        width: 50%;
-    }
-}
-
-/*--------------------------------------- Tablet View (768px - 1199px) -----------------------------------------*/
-@media (max-width: 1199px) and (min-width: 768px) {
-    /* Styles for tablet view */
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .hero-section {
-        flex-direction: column;
-        gap: 3rem;
-        padding-bottom: 4rem;
-    }
-
-    .hero-section-heading {
-        font-size: 28px;
-    }
-    
-    .hero-section-sub-heading {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    
-    .btn-pink {
-        padding: 0.6rem 2rem;
-    }
-
-    .project-card {
-        width: 95%;
-        height: 450px;
-    }
-
-    /* Skills section */
-    .skills-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .skill-container-left, 
-    .skill-container-right {
-        width: 100%;
-    }
-
-    /* Adjust contact form */
-    .form {
-        width: 80%;
-    }
-}
-
-/*------------------------------------------ Mobile View (max-width: 767px) -------------------------------------*/
-@media (max-width: 767px) {
-    /* Styles for mobile view */
-    .container {
-        width: 100%;
-        margin: 0;
-    }
-
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding-top: 0.5rem;
     }
 
     .nav-items {
-        padding: 0;
         flex-direction: column;
         gap: 1rem;
     }
 
     .hero-section {
         flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 0;
+        padding-bottom: 4rem;
+    }
+
+    .hero-section-left {
+        align-items: center;
+    }
+
+    .hero-section-description {
+        width: 100%;
         text-align: center;
     }
 
-    .hero-section-heading {
-        font-size: 24px;
-    }
-
-    .hero-section-sub-heading {
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .btn-pink {
-        width: 100%;
-        padding: 0.5rem 1rem;
-        font-size: 16px;
-    }
-
-    /* Adjust project section */
     .project-card {
-        width: 100%;
-        height: 250px;
+        height: 300px;
     }
 
     .project-content {
         scale: 0.8;
-        text-align: center;
-        padding: 1rem;
+        bottom: 10%;
     }
 
-    /* Skills section */
-    .skills-container {
-        flex-direction: column;
-        padding: 2rem;
+    .page-header {
+        font-size: 50px;
     }
 
-    .skill-container-left, 
-    .skill-container-right {
-        width: 100%;
+    .contactus-heading {
+        font-size: 3em;
     }
 
-    .skills-logo {
-        width: 60px;
+    .contactus-subHeading {
+        font-size: 1.5em;
     }
 
-    /* Contact form */
-    .form {
-        width: 90%;
-        margin: 1rem;
-    }
-
-    /* Footer */
     .footer {
         padding: 2rem;
     }
 
     .footer-wrapper {
         flex-direction: column;
-        text-align: center;
-        gap: 2rem;
+        align-items: center;
+    }
+
+    .link-wrapper {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .icon-wrapper {
+        justify-content: center;
     }
 }
 
+/* Adjustments for tablet screens */
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    .hero-section-left {
+        align-items: flex-start;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .hero-section-description {
+        width: 100%;
+    }
+
+    .project-card {
+        height: 400px;
+    }
+
+    .project-content {
+        bottom: 15%;
+    }
+}
